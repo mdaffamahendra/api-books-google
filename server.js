@@ -3,7 +3,7 @@ const axios = require('axios');
 const cors = require('cors');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Ganti dengan API Key Anda
 const GOOGLE_BOOKS_API_KEY = 'AIzaSyD-WdqlIlNP74Ykt51ui7sHqsRx3Gs8TEo';
