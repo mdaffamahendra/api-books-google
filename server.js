@@ -4,7 +4,13 @@ const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
+const corsOptions = {
+    origin: 'http://localhost:5173', // Izinkan permintaan dari domain ini
+    methods: 'GET', // Izinkan hanya metode GET
+    optionsSuccessStatus: 200 // Beberapa browser memerlukan ini
+  };
+  
+  app.use(cors(corsOptions)); 
 // Ganti dengan API Key Anda
 const GOOGLE_BOOKS_API_KEY = 'AIzaSyD-WdqlIlNP74Ykt51ui7sHqsRx3Gs8TEo';
 
