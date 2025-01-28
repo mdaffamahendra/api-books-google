@@ -5,11 +5,6 @@ const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
-// Middleware CORS
-app.use(cors({
-    origin: ['http://127.0.0.1:5500', 'http://localhost:5173'] // Ganti dengan domain frontend Anda
-}));
-
 // Ganti dengan API Key Anda
 const GOOGLE_BOOKS_API_KEY = 'AIzaSyD-WdqlIlNP74Ykt51ui7sHqsRx3Gs8TEo';
 
