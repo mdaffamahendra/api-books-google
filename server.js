@@ -11,7 +11,7 @@ app.use(cors({
   }));
   
 // Ganti dengan API Key Anda
-const GOOGLE_BOOKS_API_KEY = 'AIzaSyD-WdqlIlNP74Ykt51ui7sHqsRx3Gs8TEo';
+const GOOGLE_BOOKS_API_KEY = 'AIzaSyCS32QAPaW0svLfLTfM4R5pt5f-8DaCCjw';
 
 // Fungsi untuk memfilter buku dengan gambar
 async function fetchBooks(query, maxResults = 10, startIndex = 0) {
